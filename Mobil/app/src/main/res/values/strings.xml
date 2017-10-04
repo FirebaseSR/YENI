@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Mobil</string>
+
+    <string-array name="tur">
+        <item>Yapılacaklar</item>
+        <item>Sınav</item>
+        <item>Toplantı</item>
+        <item>Doğum Günü</item>
+    </string-array>
+
+    <string-array name="sure">
+        <item>5 dk</item>
+        <item>15 dk</item>
+        <item>30 dk</item>
+        <item>1 Saat</item>
+        <item>2 Saat</item>
+        <item>5 Saat</item>
+        <item>Her gün</item>
+    </string-array>
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.mobil.Dogumgunu">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:src="@drawable/dm"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hatırlatıcı Adı"
+                android:id="@+id/textView14"
+                android:layout_below="@+id/imageView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="                    "
+                android:id="@+id/textView15"
+                android:layout_below="@+id/imageView3"
+                android:layout_toRightOf="@+id/editText4"
+                android:layout_toEndOf="@+id/editText4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hatırlatıcı Zamanı"
+                android:id="@+id/textView16"
+                android:layout_below="@+id/imageView3"
+                android:layout_toRightOf="@+id/editText4"
+                android:layout_toEndOf="@+id/editText4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:layout_width="183dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:layout_below="@+id/textView14"
+                android:layout_alignLeft="@+id/textView29"
+                android:layout_alignStart="@+id/textView29"
+                android:layout_toLeftOf="@+id/button3"
+                android:layout_toStartOf="@+id/button3" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner3"
+                android:layout_alignBottom="@+id/editText4"
+                android:layout_toRightOf="@+id/editText4"
+                android:layout_toEndOf="@+id/editText4"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Kişi Numarası"
+            android:id="@+id/textView29"
+            android:layout_below="@+id/editText4"
+            android:layout_alignLeft="@+id/textView32"
+            android:layout_alignStart="@+id/textView32" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number|phone|textPhonetic"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:layout_below="@+id/textView29"
+            android:layout_centerHorizontal="true"
+            android:phoneNumber="false"
+            android:maxLength="12"
+            android:hint="_(___)___ __ __" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioGroup2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mesaj Gönder"
+                android:id="@+id/radioButton3"
+                android:checked="false"
+                android:onClick="sec" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="              "
+                android:id="@+id/textView30"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageView3"
+                android:layout_toStartOf="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="      "
+                android:id="@+id/textView31" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ara"
+                android:id="@+id/radioButton4"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:onClick="sec" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mesajınız"
+            android:id="@+id/textView32"
+            android:layout_below="@+id/radioGroup2"
+            android:layout_toLeftOf="@+id/editText9"
+            android:layout_toStartOf="@+id/editText9" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText9"
+            android:layout_below="@+id/textView32"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_alignEnd="@+id/imageView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="          "
+            android:id="@+id/textView33"
+            android:layout_below="@+id/imageView3"
+            android:layout_toRightOf="@+id/editText4"
+            android:layout_toEndOf="@+id/editText4"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="          "
+            android:id="@+id/textView34"
+            android:layout_below="@+id/imageView3"
+            android:layout_toRightOf="@+id/editText4"
+            android:layout_toEndOf="@+id/editText4"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="25dp" >
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/gerii"
+                android:id="@+id/button"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="geri" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="          "
+                android:id="@+id/textView37"
+                android:layout_below="@+id/imageView3"
+                android:layout_toRightOf="@+id/editText4"
+                android:layout_toEndOf="@+id/editText4" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ileri"
+                android:id="@+id/button3"
+                android:onClick="tamam"
+                android:layout_alignTop="@+id/button"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
